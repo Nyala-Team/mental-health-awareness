@@ -34,11 +34,11 @@ export function StoriesSection() {
             You are not alone
           </span>
           <h2 className="mt-3 text-balance font-display text-3xl font-extrabold leading-tight text-foreground sm:text-4xl">
-            Real stories from young Malaysians.
+            Illustrative stories about reaching out.
           </h2>
           <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
-            Recovery isn&apos;t a straight line, and everyone&apos;s path looks different. Here&apos;s
-            what helped them keep going.
+            Everyone&apos;s path looks different. These fictional composites model possible ways of
+            asking for and offering support.
           </p>
         </div>
 

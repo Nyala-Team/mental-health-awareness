@@ -7,7 +7,7 @@ const navLinks = [
   { label: "Feelings", href: "#feelings" },
   { label: "Practice", href: "#practice" },
   { label: "Coping Tools", href: "#tools" },
-  { label: "Real Stories", href: "#stories" },
+  { label: "Illustrative Stories", href: "#stories" },
   { label: "Resources", href: "#resources" },
 ]
 

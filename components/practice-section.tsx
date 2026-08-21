@@ -20,8 +20,9 @@ export function PracticeSection() {
               Knowing the words is different from choosing them in the moment.
             </h2>
             <p className="mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
-              Try two fictional peer-support scenes, see transparent feedback, and compare a private
-              five-item baseline and post-check. Nothing is uploaded or stored.
+              Try two fictional peer-support scenes, see transparent feedback, and compare a
+              five-item baseline and post-check. Answers stay in page memory and this application
+              does not transmit or persist them.
             </p>
             <Link
               href="/practice"

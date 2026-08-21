@@ -20,14 +20,14 @@ const helplines = [
     number: "15555",
     tel: "15555",
     detail: "Ministry of Health mental health & psychosocial support line.",
-    hours: "8am – 12am daily",
+    hours: "Check the provider's current operating hours",
   },
   {
     name: "MIASA Helpline",
     number: "1-800-180-066",
     tel: "1800180066",
     detail: "Mental illness awareness & peer support association.",
-    hours: "Office hours + WhatsApp",
+    hours: "Check the provider's current operating hours",
   },
 ]
 
@@ -43,11 +43,12 @@ export function HelplinesSection() {
                 Need help right now?
               </span>
               <h2 className="mt-4 text-balance font-display text-3xl font-extrabold leading-tight text-foreground sm:text-4xl">
-                Free helplines, ready to listen.
+                Support contacts for urgent moments.
               </h2>
               <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">
-                If you or someone you know is in crisis or thinking of self-harm, please reach out.
-                These lines are free, confidential, and here for you.
+                If you or someone you know may be in immediate danger, call 999. Service scope,
+                cost, confidentiality, availability, and response times vary by provider; verify
+                current details when possible.
               </p>
             </div>
             <div className="flex items-center gap-3 rounded-2xl bg-destructive/10 p-4 text-destructive">

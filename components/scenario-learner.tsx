@@ -268,7 +268,7 @@ export function ScenarioLearner() {
                 tabIndex={-1}
                 className="mt-6 max-w-2xl text-balance font-display text-4xl font-extrabold leading-tight text-foreground sm:text-5xl"
               >
-                Practise being a safer first responder for a friend.
+                Practise supportive peer decisions for a friend.
               </h1>
               <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
                 Complete a short baseline check, make two fictional peer-support decisions, and see
@@ -280,7 +280,7 @@ export function ScenarioLearner() {
               {[
                 ["1", "Check", "Five baseline decisions"],
                 ["2", "Practise", "Two bounded scenarios"],
-                ["3", "Reflect", "A private on-screen summary"],
+                ["3", "Reflect", "An on-screen summary"],
               ].map(([number, title, detail]) => (
                 <div key={number} className="rounded-3xl border border-border/70 bg-background p-5">
                   <span className="text-sm font-extrabold text-primary">STEP {number}</span>
@@ -432,7 +432,7 @@ export function ScenarioLearner() {
         {stage === "summary" && (
           <section className="space-y-7">
             <div className="rounded-[2.5rem] border border-primary/30 bg-primary/10 p-7 sm:p-10">
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary">Private summary</p>
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary">On-screen summary</p>
               <h1
                 ref={stageHeadingRef}
                 tabIndex={-1}
@@ -447,10 +447,10 @@ export function ScenarioLearner() {
 
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {[
-                ["Knowledge", `${summary.baselineCorrect}/5 → ${summary.postCorrect}/5`, `${summary.improvement >= 0 ? "+" : ""}${summary.improvement} correct`],
-                ["Responses", `${summary.supportiveResponseAccuracyPct}%`, "Best scenario choices"],
+                ["Answer key", `${summary.baselineCorrect}/5 → ${summary.postCorrect}/5`, `${summary.improvement >= 0 ? "+" : ""}${summary.improvement} same-session matches`],
+                ["Choices", `${summary.supportiveResponseAccuracyPct}%`, "Draft-preferred scenario choices"],
                 ["Escalation", summary.safeEscalationSelected ? "Selected" : "Review", "Urgent safety pathway"],
-                ["Recall", summary.resourceRecallCorrect ? "Correct" : "Review", "24/7 support resource"],
+                ["Recall", summary.resourceRecallCorrect ? "Matched" : "Review", "24/7 support resource"],
               ].map(([label, value, detail]) => (
                 <div key={label} className="rounded-3xl border border-border/70 bg-card p-5">
                   <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground">{label}</p>

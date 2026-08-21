@@ -16,9 +16,9 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Okay Tak Okay — Mental Health Support for Malaysian Youth',
+  title: 'Okay Tak Okay — Mental Health Education for Malaysian Youth',
   description:
-    'A safe, judgment-free space for Malaysian youth to understand their feelings, find coping tools, read real stories, and reach free crisis helplines. Tak apa untuk tak okay.',
+    'An independent educational prototype with general coping exercises, illustrative stories, and links to external support services for Malaysian youth.',
   generator: 'v0.app',
   icons: {
     icon: [

@@ -5,12 +5,12 @@ const tips = [
   {
     icon: NotebookPen,
     title: "Write it out",
-    desc: "Journal one worry and one good thing each day. Getting it out of your head helps.",
+    desc: "If writing feels useful, note one worry and one good thing without judging either.",
   },
   {
     icon: Footprints,
     title: "Move a little",
-    desc: "A short walk, stretching, or badminton with friends can shift a heavy mood.",
+    desc: "If it is safe and accessible, try a short walk, stretching, or another gentle movement.",
   },
   {
     icon: MessageCircleHeart,
@@ -20,17 +20,17 @@ const tips = [
   {
     icon: Users,
     title: "Find your people",
-    desc: "Join a support group or online community where you feel understood.",
+    desc: "Consider a moderated support group or community with clear safety and privacy rules.",
   },
   {
     icon: MoonStar,
     title: "Protect your sleep",
-    desc: "Put the phone down 30 minutes earlier. Rest is not lazy, it's healing.",
+    desc: "If practical, try a consistent wind-down routine and a little less screen time before bed.",
   },
   {
     icon: Wind,
     title: "Breathe on purpose",
-    desc: "Slow breathing calms your nervous system when panic hits. Try the tool here.",
+    desc: "Optional paced breathing can feel grounding for some people. Stop if it feels uncomfortable.",
   },
 ]
 
@@ -40,14 +40,14 @@ export function ToolsSection() {
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-24">
         <div className="max-w-2xl">
           <span className="text-sm font-bold uppercase tracking-wide text-primary">
-            Small steps, real relief
+            Small, optional steps
           </span>
           <h2 className="mt-3 text-balance font-display text-3xl font-extrabold leading-tight text-foreground sm:text-4xl">
-            Coping tools you can use right now.
+            Coping exercises you can try right now.
           </h2>
           <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
-            These won&apos;t fix everything &mdash; and that&apos;s okay. But they can help you get
-            through the next hour, the next day.
+            These are general educational suggestions, not treatment. Keep only what feels safe and
+            useful for you.
           </p>
         </div>
 

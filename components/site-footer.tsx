@@ -13,8 +13,8 @@ export function SiteFooter() {
               <span className="font-display text-lg font-extrabold">Okay Tak Okay</span>
             </div>
             <p className="mt-4 text-pretty leading-relaxed text-primary-foreground/85">
-              A youth-led mental health awareness space for Malaysia. Tak apa untuk tak okay &mdash;
-              you deserve support, understanding, and care.
+              An independent youth mental-health education prototype for Malaysia. Tak apa untuk
+              tak okay &mdash; you deserve support, understanding, and care.
             </p>
           </div>
 
@@ -24,7 +24,7 @@ export function SiteFooter() {
               <ul className="mt-3 space-y-2 text-primary-foreground/85">
                 <li><a href="#feelings" className="hover:text-primary-foreground">Feelings</a></li>
                 <li><a href="#tools" className="hover:text-primary-foreground">Coping Tools</a></li>
-                <li><a href="#stories" className="hover:text-primary-foreground">Real Stories</a></li>
+                <li><a href="#stories" className="hover:text-primary-foreground">Illustrative Stories</a></li>
                 <li><a href="#resources" className="hover:text-primary-foreground">Resources</a></li>
               </ul>
             </div>
@@ -42,8 +42,8 @@ export function SiteFooter() {
 
         <div className="mt-10 border-t border-primary-foreground/20 pt-6 text-xs text-primary-foreground/70">
           <p>
-            This website is for awareness and support only and is not a substitute for professional
-            medical advice, diagnosis, or treatment. If you are in immediate danger, call 999.
+            This website is for education only and is not a counselling, crisis, diagnostic, or
+            treatment service. If you are in immediate danger, call 999.
           </p>
           <p className="mt-2">&copy; {new Date().getFullYear()} Okay Tak Okay. Made with care in Malaysia.</p>
         </div>

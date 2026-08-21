@@ -45,8 +45,8 @@ export function FeelingsSection() {
             Whatever you&apos;re feeling, it&apos;s valid.
           </h2>
           <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
-            Naming what you feel is the first step. Here are some things young Malaysians tell us
-            they go through. Recognise any of these?
+            These general examples can make difficult experiences easier to notice and describe.
+            They are not a diagnosis. Recognise any of these?
           </p>
         </div>
 

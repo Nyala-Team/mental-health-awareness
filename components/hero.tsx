@@ -16,9 +16,9 @@ export function Hero() {
           </h1>
 
           <p className="max-w-md text-pretty text-lg leading-relaxed text-muted-foreground">
-            Stress exam, family, kerja, media sosial &mdash; a lot is going on. This is your safe,
-            judgment-free space to understand your feelings, learn coping tools, and find real help
-            when you need it.
+            Stress exam, family, kerja, media sosial &mdash; a lot is going on. This educational
+            prototype offers examples, optional coping exercises, and links to independent support
+            services.
           </p>
 
           <div className="flex flex-col gap-3 sm:flex-row">
@@ -37,7 +37,7 @@ export function Hero() {
           </div>
 
           <p className="text-sm font-medium text-muted-foreground">
-            Free &middot; Confidential &middot; Available in BM &amp; English
+            No account &middot; No free-text answers &middot; Not a counselling service
           </p>
         </div>
 
