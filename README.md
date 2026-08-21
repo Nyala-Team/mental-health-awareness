@@ -11,6 +11,8 @@ A Malaysian youth mental-health awareness site extended with a bounded peer-supp
 - Immediate explanatory feedback
 - On-device summary: knowledge change, response accuracy, safe escalation, resource recall, and completion
 - Always-visible support route
+- Homepage NHMS 2022 context with exact population, year, recall-period and interpretation limits
+- Visible evidence → learning-objective bridge for peer support, recognition and safe escalation
 - No login, free text, diagnosis, chatbot, cookies, analytics, or persistence
 
 This is an educational prototype, **not** a screening, diagnostic, therapy, or crisis service. External Malaysian mental-health/safeguarding review is required before a school pilot.
@@ -33,10 +35,11 @@ npm run lint
 npm run build
 ```
 
-The deterministic scoring/content contract is in `tests/scenario-engine.test.ts`. Content and metrics are defined in `lib/scenario-engine.ts`; the UI is in `components/scenario-learner.tsx`.
+The deterministic scoring/content contract is in `tests/scenario-engine.test.ts`. The public-evidence contract is in `tests/evidence-context.test.ts`. Content and metrics are defined in `lib/scenario-engine.ts`, verified national context is defined in `lib/evidence-context.ts`, and the learner UI is in `components/scenario-learner.tsx`.
 
 ## Safety sources
 
+- [Institute for Public Health — NHMS 2022 Adolescent Health Survey](https://iku.gov.my/nhms-ahs-2022)
 - [Ministry of Health Malaysia — Let’s TALK](https://www.moh.gov.my/en/program-inisiatif/lets-talk)
 - [Befrienders KL — I’m Worried About Someone](https://befrienders.org.my/get-help/im-worried-about-someone/)
 - [WHO — Helping Adolescents Thrive guidelines](https://www.who.int/publications/i/item/9789240011854)

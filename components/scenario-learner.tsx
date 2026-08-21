@@ -21,6 +21,7 @@ import {
   scenarios,
   summarizeSession,
 } from "@/lib/scenario-engine"
+import { evidenceToLearning, nationalEvidenceFacts } from "@/lib/evidence-context"
 
 type Stage = "intro" | "baseline" | "scenario" | "post" | "summary"
 
@@ -115,6 +116,38 @@ function AssessmentForm({
         )}
       </div>
     </form>
+  )
+}
+
+function EvidenceBridge() {
+  return (
+    <section className="border-t border-border/70 bg-background/55 p-7 sm:p-10">
+      <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary">Evidence → skill</p>
+      <h2 className="mt-2 font-display text-2xl font-extrabold text-foreground">
+        Why these three learning objectives?
+      </h2>
+      <div className="mt-5 grid gap-4 lg:grid-cols-3">
+        {evidenceToLearning.map((item) => {
+          const fact = nationalEvidenceFacts.find((candidate) => candidate.id === item.evidenceId)
+          if (!fact) return null
+          return (
+            <article key={item.evidenceId} className="rounded-3xl border border-border/70 bg-card p-5">
+              <p className="text-sm font-bold text-primary">
+                {fact.displayValue} {fact.label}
+              </p>
+              <p className="mt-2 font-display font-bold leading-snug text-foreground">
+                {item.learningObjective}
+              </p>
+              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{item.rationale}</p>
+            </article>
+          )
+        })}
+      </div>
+      <p className="mt-5 text-xs leading-relaxed text-muted-foreground">
+        National context: NHMS 2022, school-going adolescents in Malaysian secondary schools.
+        Population estimates guide educational priorities; they do not predict an individual&apos;s risk.
+      </p>
+    </section>
   )
 }
 
@@ -256,6 +289,7 @@ export function ScenarioLearner() {
                 </div>
               ))}
             </div>
+            <EvidenceBridge />
             <div className="flex flex-wrap items-center gap-4 border-t border-border/70 p-7 sm:p-10">
               <button
                 type="button"
