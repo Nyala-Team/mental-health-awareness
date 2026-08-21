@@ -2,6 +2,7 @@ import { SiteHeader } from "@/components/site-header"
 import { Hero } from "@/components/hero"
 import { StatsSection } from "@/components/stats-section"
 import { FeelingsSection } from "@/components/feelings-section"
+import { PracticeSection } from "@/components/practice-section"
 import { ToolsSection } from "@/components/tools-section"
 import { StoriesSection } from "@/components/stories-section"
 import { ResourcesSection } from "@/components/resources-section"
@@ -16,6 +17,7 @@ export default function Page() {
         <Hero />
         <StatsSection />
         <FeelingsSection />
+        <PracticeSection />
         <ToolsSection />
         <StoriesSection />
         <ResourcesSection />

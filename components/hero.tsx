@@ -1,6 +1,5 @@
 import Image from "next/image"
-import { Phone, ArrowRight, Sparkles } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Sparkles } from "lucide-react"
 
 export function Hero() {
   return (
@@ -23,23 +22,18 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button asChild size="lg" className="rounded-full text-base font-bold">
-              <a href="#helplines">
-                {/* <Phone className="h-5 w-5" /> */}
-                Talk to someone now
-              </a>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="secondary"
-              className="rounded-full text-base font-bold"
+            <a
+              href="#helplines"
+              className="inline-flex h-11 items-center justify-center rounded-full bg-primary px-5 text-base font-bold text-primary-foreground transition-opacity hover:opacity-90"
             >
-              <a href="#tools">
-                Explore coping tools
-                {/* <ArrowRight className="h-5 w-5" /> */}
-              </a>
-            </Button>
+              Talk to someone now
+            </a>
+            <a
+              href="#tools"
+              className="inline-flex h-11 items-center justify-center rounded-full bg-secondary px-5 text-base font-bold text-secondary-foreground transition-colors hover:bg-secondary/80"
+            >
+              Explore coping tools
+            </a>
           </div>
 
           <p className="text-sm font-medium text-muted-foreground">

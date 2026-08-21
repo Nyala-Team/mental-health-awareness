@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Nunito, Poppins } from 'next/font/google'
 import './globals.css'
@@ -52,10 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`light bg-background ${nunito.variable} ${poppins.variable}`}>
-      <body className="font-sans antialiased">
-        {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
-      </body>
+      <body className="font-sans antialiased">{children}</body>
     </html>
   )
 }

@@ -2,10 +2,10 @@
 
 import { useState } from "react"
 import { Menu, X, Phone, HeartHandshake } from "lucide-react"
-import { Button } from "@/components/ui/button"
 
 const navLinks = [
   { label: "Feelings", href: "#feelings" },
+  { label: "Practice", href: "#practice" },
   { label: "Coping Tools", href: "#tools" },
   { label: "Real Stories", href: "#stories" },
   { label: "Resources", href: "#resources" },
@@ -39,12 +39,12 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden md:block">
-          <Button asChild className="rounded-full font-semibold">
-            <a href="#helplines">
-              {/* <Phone className="h-4 w-4" /> */}
-              Get Help Now
-            </a>
-          </Button>
+          <a
+            href="#helplines"
+            className="inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+          >
+            Get Help Now
+          </a>
         </div>
 
         <button
@@ -71,12 +71,14 @@ export function SiteHeader() {
                 {link.label}
               </a>
             ))}
-            <Button asChild className="mt-2 rounded-full font-semibold">
-              <a href="#helplines" onClick={() => setOpen(false)}>
-                <Phone className="h-4 w-4" />
-                Get Help Now
-              </a>
-            </Button>
+            <a
+              href="#helplines"
+              onClick={() => setOpen(false)}
+              className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground"
+            >
+              <Phone className="h-4 w-4" />
+              Get Help Now
+            </a>
           </nav>
         </div>
       )}

@@ -41,11 +41,6 @@ export function BreathingTool() {
     }
   }, [running])
 
-  // keep count in sync when phase changes
-  useEffect(() => {
-    setCount(phases[phaseIndex].seconds)
-  }, [phaseIndex])
-
   const reset = () => {
     setRunning(false)
     setPhaseIndex(0)
