@@ -1,5 +1,6 @@
 import { Wind, NotebookPen, Footprints, MessageCircleHeart, Users, MoonStar } from "lucide-react"
 import { BreathingTool } from "@/components/breathing-tool"
+import { MoodTrackerWidget } from "@/components/mood-tracker-widget"
 
 const tips = [
   {
@@ -51,16 +52,21 @@ export function ToolsSection() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-8 lg:grid-cols-2">
-          <BreathingTool />
+        <div className="mt-12 space-y-8">
+          {/* Top row: breathing + mood tracker */}
+          <div className="grid gap-6 lg:grid-cols-2">
+            <BreathingTool />
+            <MoodTrackerWidget />
+          </div>
 
-          <div className="grid gap-5 sm:grid-cols-2">
+          {/* Coping tips grid */}
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {tips.map((tip) => (
               <div
                 key={tip.title}
-                className="rounded-3xl border border-border/70 bg-card p-6"
+                className="group rounded-3xl border border-border/70 bg-card p-6 transition-all duration-200 hover:scale-[1.02] hover:border-primary/40 hover:shadow-md"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-accent/40 text-accent-foreground">
+                <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-accent/40 text-accent-foreground transition-colors group-hover:bg-primary/15 group-hover:text-primary">
                   <tip.icon className="h-5 w-5" />
                 </span>
                 <h3 className="mt-4 font-display text-lg font-bold text-foreground">{tip.title}</h3>
